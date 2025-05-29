@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttendServerWin</class>
+ <widget class="QMainWindow" name="AttendServerWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AttendServerWin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>591</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="showWidget">
+     <attribute name="title">
+      <string>考情图像</string>
+     </attribute>
+     <widget class="QLabel" name="pictureLb">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>441</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>考勤图像</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Registerwin" name="registerWidget">
+     <attribute name="title">
+      <string>注册</string>
+     </attribute>
+    </widget>
+    <widget class="selectwin" name="selectWidget">
+     <attribute name="title">
+      <string>查询</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Registerwin</class>
+   <extends>QWidget</extends>
+   <header location="global">registerwin.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>selectwin</class>
+   <extends>QWidget</extends>
+   <header location="global">selectwin.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
